@@ -1,10 +1,10 @@
 # Industrial IoT Portfolio – Xavier Banham
 
-**Student:** Xavier Banham
-**Student ID:** 20094400
-**Cohort:** Feb 2026 - Jul 2026
-**Course:** Diploma of Information Technology - Internet of Things
-**Institution:** NMTAFE
+> **Student:** Xavier Banham
+> **Student ID:** 20094400
+> **Cohort:** Feb 2026 - Jul 2026
+> **Course:** Diploma of Information Technology - Internet of Things
+> **Institution:** NMTAFE
 
 <img src="image.png" alt="alt text" width="50%" >
 
