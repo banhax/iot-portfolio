@@ -1,9 +1,10 @@
-# Industrial IoT Portfolio – Template Repository
+# Industrial IoT Portfolio – Xavier Banham
 
-> A student portfolio template for the 18-week Diploma of Information Technology – Internet of Things course.
-> 
-> **This is a template repository.** Click "Use this template" to create your own portfolio repo.
-
+**Student:** Xavier Banham
+**Student ID:** 20094400
+**Cohort:** Feb 2026 - Jul 2026
+**Course:** Diploma of Information Technology - Internet of Things
+**Institution:** NMTAFE
 
 <img src="image.png" alt="alt text" width="50%" >
 
