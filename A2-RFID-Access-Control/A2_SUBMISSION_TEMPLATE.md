@@ -1,7 +1,7 @@
 # Assessment Submission Portfolio
 
 **Assessment A2: RFID Access Control System**  
-**Due:** Week 6 | **Weight:** 10%
+**Due:** Week 6/7 | **Weight:** 10%
 
 ---
 
@@ -28,27 +28,29 @@ This assessment submission form documents the completion of Assessment A2 (RFID 
 
 ### Assessment Overview
 
-Implement an RFID authentication system with timestamp logging using:
-- **RFID-RC522 module** reading multiple card types
-- **DS3231 RTC module** for accurate timestamp logging
+Implement an RFID authentication system with audio feedback using:
+- **RFID-RC522 module** reading multiple card types over SPI
+- **Piezo buzzer** with distinct tones for granted / denied feedback
+- **Green + red LEDs** as visual indicators
 - **Serial output** logging all access events
-- **Access control logic** to distinguish authorized vs. unauthorized cards
+- **Access control logic** to distinguish authorised vs. unauthorised cards
 
 ### How to Complete This Assessment
 
-1. Complete RFID and RTC code in `/A2-RFID-Access-Control/code/esp32-arduino/`
-2. Test with multiple RFID cards and verify logging
-3. Generate CSV log file with 5+ access attempts
+1. Complete RFID + buzzer code in `/A2-RFID-Access-Control/code/esp32-arduino/`
+2. Test with multiple RFID cards and verify both tone patterns
+3. Record Serial Monitor output showing 5+ access attempts (mix of granted/denied)
 4. Commit all files to GitHub
 5. Fill out this form with your submission details
 6. Copy completed form into Blackboard by the due date
 
 ### What to Submit on GitHub
 
-- ✅ Arduino `.ino` file with RFID-RC522 and DS3231 RTC code
-- ✅ CSV log file showing 5+ access event timestamps
-- ✅ README.md explaining RFID setup and authorized cards
-- ✅ Breadboard photo showing RFID and RTC wiring
+- ✅ `.ino` or `.py` file with RFID-RC522, buzzer, and LED code
+- ✅ Serial Monitor screenshot/log showing 5+ access attempts
+- ✅ README.md explaining RFID setup, authorised card UIDs, and SPI vs I²C paragraph
+- ✅ Breadboard photo showing RFID, buzzer, and LED wiring
+- ✅ Demo video (2 min) showing both tone patterns
 
 ---
 
@@ -71,15 +73,15 @@ Implement an RFID authentication system with timestamp logging using:
 |-------|---------|
 | **Repository URL** | [Paste your GitHub portfolio URL] |
 | **Assessment Folder** | `/A2-RFID-Access-Control/` |
-| **Code Location** | `/A2-RFID-Access-Control/code/esp32-arduino/` |
+| **Code Location** | `/A2-RFID-Access-Control/code/esp32-arduino/` or `code/pico-micropython/` |
 | **Last Commit Date** | [Date of final commit] |
 
 ### Work Completed
 
 **Brief Description:**  
-Describe your RFID system: how many authorized cards, what the RTC logs, and how unauthorized cards are handled.
+Describe your RFID access control system: how many authorised cards, what tones you chose for granted/denied, and how you distinguish cards.
 
-[Your description here - 2-3 sentences]
+[Your description here — 2–3 sentences]
 
 ---
 
@@ -89,26 +91,27 @@ Describe your RFID system: how many authorized cards, what the RTC logs, and how
 
 | Requirement | Evidence Provided | Location in Repository |
 |-------------|-------------------|------------------------|
-| Arduino `.ino` file with RFID and RTC code | ☐ Included | `/A2-RFID-Access-Control/code/esp32-arduino/` |
-| RFID-RC522 reading multiple cards | ☐ Working | Serial output shows card UIDs |
-| DS3231 RTC module providing timestamps | ☐ Working | CSV log includes accurate timestamps |
-| Access control logic (authorized/unauthorized) | ☐ Included | Code distinguishes card types |
-| CSV log file with 5+ access events | ☐ Included | CSV in assessment folder |
-| Assessment README.md | ☐ Included | `/A2-RFID-Access-Control/README.md` |
+| `.ino` or `.py` file with RFID + buzzer code | ☐ Included | `/A2-RFID-Access-Control/code/` |
+| RFID-RC522 reading multiple cards (SPI) | ☐ Working | Serial output shows card UIDs |
+| Distinct **granted tone** (rising, two notes) | ☐ Working | Demo video / serial log |
+| Distinct **denied tone** (alarm pattern, 3× low) | ☐ Working | Demo video / serial log |
+| Green + red LED indicators | ☐ Working | Breadboard photo |
+| Serial log with 5+ access attempts (mix granted/denied) | ☐ Included | Screenshot in assessment folder |
+| SPI vs I²C paragraph in README | ☐ Included | `/A2-RFID-Access-Control/README.md` |
 
 ### Hardware Evidence
 
 | Requirement | Evidence | Provided |
 |-------------|----------|----------|
-| **Breadboard Photo** | Photo showing RFID-RC522 and DS3231 RTC wired correctly | ☐ Yes |
-| **Access Log Sample** | CSV showing timestamps of access attempts | ☐ Yes |
-| **Working System** | Screenshot of serial monitor showing access log output | ☐ Yes |
+| **Breadboard Photo** | Photo showing RFID-RC522, buzzer, and LEDs wired correctly | ☐ Yes |
+| **Serial Log Screenshot** | 5+ access attempts showing granted and denied | ☐ Yes |
+| **Demo Video** | 2 min showing both tone patterns, LEDs responding | ☐ Yes |
 
 **Breadboard Photo/Screenshot:**  
 [Describe what's shown in your evidence]
 
-**Sample CSV Entry:**  
-[Paste 1-2 rows from your CSV log showing timestamp, card UID, and access status]
+**Sample Serial Log Entry:**  
+[Paste 1-2 lines from your serial output showing card UID and access status]
 
 ---
 
@@ -118,16 +121,18 @@ Confirm all requirements completed before submitting:
 
 | Requirement | Completed |
 |-------------|-----------|
-| RFID-RC522 reads card UIDs correctly | ☐ |
-| DS3231 RTC provides accurate timestamps | ☐ |
+| RFID-RC522 reads card UIDs correctly over SPI | ☐ |
+| Authorised cards are identified and granted | ☐ |
+| Unauthorised cards are rejected | ☐ |
+| Distinct **granted** tone plays on authorised card | ☐ |
+| Distinct **denied** tone plays on unauthorised card | ☐ |
+| Green LED lights on granted, red on denied | ☐ |
 | Serial output logs each access attempt | ☐ |
-| CSV file contains 5+ access events | ☐ |
-| Authorized cards are identified | ☐ |
-| Unauthorized cards are rejected | ☐ |
+| SPI vs I²C paragraph included in README | ☐ |
 | Code is clean and commented | ☐ |
 | GitHub repository is accessible | ☐ |
-| Assessment README documents the setup | ☐ |
 | Breadboard photo shows all connections | ☐ |
+| Demo video shows both tone patterns | ☐ |
 
 ---
 
@@ -142,10 +147,10 @@ Confirm all requirements completed before submitting:
 By submitting this form, I confirm that:
 
 - ☐ All code in my A2 folder is my own work
-- ☐ RFID and RTC modules are correctly wired and functional
-- ☐ Access logging system works as designed
+- ☐ RFID-RC522 module is correctly wired and functional
+- ☐ Buzzer tones for granted and denied are distinct and working
 - ☐ Code follows ICTIOT502 assessment requirements
-- ☐ I have not plagiarized or breached academic integrity
+- ☐ I have not plagiarised or breached academic integrity
 
 ---
 
