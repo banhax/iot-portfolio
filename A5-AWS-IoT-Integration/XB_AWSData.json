@@ -1,0 +1,146 @@
+{
+  "topicFilter": "truck/1/telemetry",
+  "qos": 0,
+  "messages": [
+    {
+      "format": "json",
+      "topic": "truck/1/telemetry",
+      "timestamp": 1780393904055,
+      "payload": {
+        "temp": "60.93",
+        "accelerometer": {
+          "rawX": "-1.96",
+          "rawY": "-7.35",
+          "rawZ": "9.32"
+        }
+      },
+      "qos": 0
+    },
+    {
+      "format": "json",
+      "topic": "truck/1/telemetry",
+      "timestamp": 1780393898987,
+      "payload": {
+        "temp": "80.00",
+        "accelerometer": {
+          "rawX": "-1.96",
+          "rawY": "-7.35",
+          "rawZ": "9.32"
+        }
+      },
+      "qos": 0
+    },
+    {
+      "format": "json",
+      "topic": "truck/1/telemetry",
+      "timestamp": 1780393893935,
+      "payload": {
+        "temp": "80.00",
+        "accelerometer": {
+          "rawX": "-1.96",
+          "rawY": "4.90",
+          "rawZ": "4.41"
+        }
+      },
+      "qos": 0
+    },
+    {
+      "format": "json",
+      "topic": "truck/1/telemetry",
+      "timestamp": 1780393888887,
+      "payload": {
+        "temp": "65.33",
+        "accelerometer": {
+          "rawX": "-1.96",
+          "rawY": "4.90",
+          "rawZ": "4.41"
+        }
+      },
+      "qos": 0
+    },
+    {
+      "format": "json",
+      "topic": "truck/1/telemetry",
+      "timestamp": 1780393883831,
+      "payload": {
+        "temp": "65.33",
+        "accelerometer": {
+          "rawX": "-1.96",
+          "rawY": "4.90",
+          "rawZ": "4.41"
+        }
+      },
+      "qos": 0
+    },
+    {
+      "format": "json",
+      "topic": "truck/1/telemetry",
+      "timestamp": 1780393878786,
+      "payload": {
+        "temp": "8.02",
+        "accelerometer": {
+          "rawX": "15.69",
+          "rawY": "-8.33",
+          "rawZ": "-1.47"
+        }
+      },
+      "qos": 0
+    },
+    {
+      "format": "json",
+      "topic": "truck/1/telemetry",
+      "timestamp": 1780393873728,
+      "payload": {
+        "temp": "55.28",
+        "accelerometer": {
+          "rawX": "15.69",
+          "rawY": "-8.33",
+          "rawZ": "9.81"
+        }
+      },
+      "qos": 0
+    },
+    {
+      "format": "json",
+      "topic": "truck/1/telemetry",
+      "timestamp": 1780393868651,
+      "payload": {
+        "temp": "55.28",
+        "accelerometer": {
+          "rawX": "0.00",
+          "rawY": "0.00",
+          "rawZ": "9.81"
+        }
+      },
+      "qos": 0
+    },
+    {
+      "format": "json",
+      "topic": "truck/1/telemetry",
+      "timestamp": 1780393862315,
+      "payload": {
+        "temp": "80.00",
+        "accelerometer": {
+          "rawX": "0.00",
+          "rawY": "0.00",
+          "rawZ": "9.81"
+        }
+      },
+      "qos": 0
+    },
+    {
+      "format": "json",
+      "topic": "truck/1/telemetry",
+      "timestamp": 1780393857253,
+      "payload": {
+        "temp": "73.28",
+        "accelerometer": {
+          "rawX": "0.00",
+          "rawY": "0.00",
+          "rawZ": "9.81"
+        }
+      },
+      "qos": 0
+    }
+  ]
+}
